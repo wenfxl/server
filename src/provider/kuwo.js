@@ -94,4 +94,4 @@ const track = (id) => {
 const cs = getManagedCacheStorage('provider/kuwo');
 const check = (info) => cs.cache(info, () => search(info)).then(track);
 
-module.exports = { check, track };
+module.exports = { check, track, search };
